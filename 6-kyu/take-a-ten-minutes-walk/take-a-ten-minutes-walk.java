@@ -1,14 +1,15 @@
 public class TenMinWalk {
   public static boolean isValid(char[] walk) {
     // Insert brilliant code here
-    if(walk.length !=10){
+    if(walk.length != 10){
       return false;
     }
     int northSouth = 0;
-    int eastWest = 0;
+    int eastWest =0;
     
     for(char direction : walk){
-      switch (direction){
+      switch(direction){
+          
           case 'n':
             northSouth ++;
           break;
@@ -23,6 +24,7 @@ public class TenMinWalk {
           break;
       }
     }
-    return (northSouth == 0) && (eastWest == 0);
+    
+    return (northSouth ==-0) && (eastWest ==0);
   }
 }
